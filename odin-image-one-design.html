@@ -2,17 +2,16 @@
 
 <html>
 <body>
-    <div>
+    <div class = "entire-page">
         <div class = "top-most">
-            <div class = "Header-Logo-text">
 
-            <p>
+            <p class = "Header-Logo">
                 Header Logo
             </p>
 
-            </div>
+        
 
-            <div class = "remaining-top-most">
+            <div class = "links">
             <p>
                 header link one
             </p>
@@ -26,6 +25,19 @@
 
         </div>
 
+        <div class = "lower-top-most">
+            <div >
+                <p class = "awesome-website">
+                    This Website is <br>awesome<br>
+                </p>
+                <p>This website has some subtext goes here under the <br>main title. It's smaller font and the color is lower<br> contrast</p>
+                <div class = "sign-up-text">
+                    sign up
+                </div>
+            </div>
+            <div class = "picture-place-holder">this is the place holder for an image</div>
+        </div>
+
     </div> 
 
 </body>
@@ -35,18 +47,42 @@
 </head>
 
     <style>
+
+        
         .top-most{
             display : flex;
-            flex-direction : row;
+            justify-content: space-between;
         }
-        .Header-Logo-text{
-            margin-right : 400px
-
-        }
-        .remaing-top-most{
+        .links{
             display: flex;
             /*flex-direction: row;*/
-            justify-content: space-between;      }
+            gap : 20px; 
+            margin-right: 150px;    
+        }
+        .Header-Logo{
+            margin-left: 100px;
+        }
+        .awesome-website{
+            font-weight: bold;
+        }
+        .sign-up-text{
+            background-color:rgb(18, 122, 178);
+            display : inline;
+            padding : 5px;
+            border-radius: 10px;
+            
+        }
+        .lower-top-most{
+            margin-left: 100px;
+            display : flex;
+            gap : 30px;
+        }
+        .picture-place-holder{
+            background-color :rgb(85, 83, 80);
+            padding : 50px;
+
+        }
+        .
     </style>
 
 
